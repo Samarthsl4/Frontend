@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <title>The Ultimate HTML Cheat Sheet</title>
+    
+    <style>
+        body { font-family: sans-serif; padding: 20px; background-color: palegoldenrod}
+        section { background: whitesmoke; padding: 20px; margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 11px solid #ddd; padding: 18px; text-align: left; }
+        th { background-color: #333; color: white; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HTML Practice Playground</h1>
+        <nav>
+            <a href="#about">About</a> | 
+            <a href="#media">Media</a> | 
+            <a href="#contact">Contact</a>
+        </nav>
+        <hr> </header>
+
+    <main>
+
+        <section id="about">
+            <h2>Text Formatting Tags</h2>
+            <p>This is a standard paragraph.</p>
+            <p>
+                You can make text <strong>Bold (Strong)</strong>, 
+                <em>Italic (Emphasis)</em>, or 
+                <mark>Highlighted</mark>.
+            </p>
+            <p>
+                Water is H<sub>2</sub>O (Subscript) and <br> 
+                Einstein said E=mc<sup>2</sup> (Superscript).
+            </p>
+            <blockquote>
+                "This is a blockquote. It is used for long quotes from other sources."
+            </blockquote>
+        </section>
+
+        <section>
+            <h2>The Three Types of Lists</h2>
+            
+            <h3>1. Unordered List (Bullet Points)</h3>
+            <ul>
+                <li>Apples</li>
+                <li>Bananas</li>
+            </ul>
+
+            <h3>2. Ordered List (Numbered)</h3>
+            <ol>
+                <li>Wake up</li>
+                <li>Code HTML</li>
+                <li>Sleep</li>
+            </ol>
+
+            <h3>3. Definition List (Dictionary Style)</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+            </dl>
+        </section>
+
+        <section id="media">
+            <h2>Media Tags</h2>
+            <p>Click the image below:</p>
+            <a href="https://www.google.com" target="_blank">
+                <img src="Screenshot (59).png" alt="Image" title="FORTUNE" width="200">
+            </a>
+            <br><br>
+            <video controls width="300">
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section>
+            <h2>Data Tables</h2>
+            <table>
+                <thead> <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Role</th>
+                    </tr>
+                </thead>
+                <tbody> <tr>
+                        <td>101</td>
+                        <td>Sam</td>
+                        <td>Developer</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Bharath</td>
+                        <td>Designer</td>
+                    </tr>
+                </tbody>
+                <tfoot> <tr>
+                        <td colspan="1">Total Employees: 2</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Interactive Form</h2>
+            <form action="/submit_page.php" method="POST">
+                
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" placeholder="Enter name"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" required><br><br>
+
+                <p>Choose your skill level:</p>
+                <input type="radio" id="beg" name="skill" value="beginner">
+                <label for="beg">Beginner</label><br>
+                <input type="radio" id="adv" name="skill" value="advanced">
+                <label for="adv">Advanced</label><br><br>
+
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="india">India</option>
+                    <option value="usa">USA</option>
+                    <option value="germany">Germany</option>
+                </select><br><br>
+
+                <label for="msg">Message:</label><br>
+                <textarea id="msg" rows="4" cols="30"></textarea><br><br>
+
+                <button type="submit">Send Data</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Learning Page</p>
+        <address>
+            Contact: <a href="mailto:me@sam.com">me@sam.com</a>
+        </address>
+    </footer>
+
+</body>
+</html>
